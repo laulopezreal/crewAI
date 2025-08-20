@@ -283,7 +283,7 @@ Identify any inefficient reasoning patterns and provide specific suggestions for
             }
         }
 
-    def _calculate_trend(self, values: Sequence[float | int]) -> float:
+    def _calculate_trend(self, values: Sequence[float | int]) -> np.floating[Any] | float:
         if not values or len(values) < 2:
             return 0.0
 

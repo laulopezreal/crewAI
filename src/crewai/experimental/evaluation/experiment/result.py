@@ -7,7 +7,7 @@ from pydantic import BaseModel
 class ExperimentResult(BaseModel):
     identifier: str
     inputs: dict[str, Any]
-    score: int | dict[str, int | float]
+    score: int | float | dict[str, int | float]
     expected_score: int | dict[str, int | float]
     passed: bool
     agent_evaluations: dict[str, Any] | None = None

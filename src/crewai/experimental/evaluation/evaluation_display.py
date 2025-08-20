@@ -222,7 +222,7 @@ class EvaluationDisplayFormatter:
         self,
         agent_id: str,
         agent_role: str,
-        results: Sequence[AgentEvaluationResult],
+        results: list[AgentEvaluationResult],
         strategy: AggregationStrategy = AggregationStrategy.SIMPLE_AVERAGE,
     ) -> AgentAggregatedEvaluationResult:
         metrics_by_category: dict[MetricCategory, list[EvaluationScore]] = defaultdict(list)

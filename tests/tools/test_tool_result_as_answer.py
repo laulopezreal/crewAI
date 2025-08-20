@@ -1,6 +1,5 @@
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch
 from crewai.agent import Agent
-from crewai.crew import Crew
 from crewai.task import Task
 from crewai.tools.base_tool import BaseTool
 from crewai.tools.tool_types import ToolAnswerResult
